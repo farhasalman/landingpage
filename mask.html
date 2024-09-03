@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imgcontainer {
+    position: relative;
+    /* width: 500px;
+    height: 500px; */
+}
+
+
+#cashew-image {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    
+    /* width: 500px;
+    height: 500px; */
+    z-index: 1; 
+}
+
+
+#bot-image {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    /* width: 500px;
+    height: 500px; */
+    z-index: 2; 
+    
+    mask-image: url('./asset/css/images/shape-42.png');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+
+   
+}
+
+    </style>
+</head>
+<body>
+    <div class="imgcontainer">
+        
+        <img id="cashew-image" src="./asset/css/images/shape-42.png" alt="Mask Image" width="500px" height="500px">
+        
+        
+        <img id="bot-image" src="./asset/css/images/shape-10.png" alt="Main Image" width="500px" height="500px">
+    </div>
+    
+    
+</body>
+</html>
